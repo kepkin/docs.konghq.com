@@ -9,8 +9,9 @@ nav:
   - label: Usage
     items:
       - label: Reading metrics
-      - lable: Available metrics
-      - lable: Accessing the metrics
+      - label: Grafana dashboard
+      - label: Available metrics
+      - label: Accessing the metrics
 description: |
     Expose metrics related to Kong and proxied upstream services in [Prometheus](https://prometheus.io/docs/introduction/overview/) exposition format, which can be scrapped by a Prometheus Server.
 
@@ -35,6 +36,11 @@ that are set to proxy only (that is their Admin API has been disabled by
 specifying `admin_listen = off`) will need to use a [custom Nginx
 configuration template](/latest/configuration/#custom-nginx-configuration)
 to expose the metrics data.
+
+#### Grafana dashboard
+
+Metrics exported by the plugin can be graphed in Grafana using a drop in
+dashboard: [https://grafana.com/dashboards/7424](https://grafana.com/dashboards/7424).
 
 #### Available metrics
 
